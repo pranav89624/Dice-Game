@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #454f5b;
+  position: relative;
+}
+
+.shape1{
+  height: 100px;
+  width: 100px;
+  background:linear-gradient(#04ff00 , #0173ff , #04ff00);
+  position: absolute;
+  z-index: 0;
+  left: 25%;
+  border-radius: 50%;
+  animation: a1 10s linear infinite  ;
+  rotate: 45deg;
+}
+
+.shape2{
+  height: 100px;
+  width: 100px;
+  background:linear-gradient(#04ff00 , #0173ff , #04ff00);
+  position: absolute;
+  z-index: 0;
+  right: 25%;
+  border-radius: 50%;
+  animation: a2 10s linear infinite  ;
+  rotate: 135deg;
+}
+
+@keyframes a1 {
+  0%{
+    top: 100%;
+  }
+  25%{
+    left: 0;
+  }
+  50%{
+    left: 28%;
+    rotate: 720deg;
+  }
+  75%{
+    left: 0;
+  }
+  100%{
+    top: -15vh;
+  }
+}
+
+@keyframes a2 {
+  0%{
+    top: 100%;
+  }
+  25%{
+    right: 0;
+  }
+  50%{
+    right: 28%;
+    rotate: 720deg;
+  }
+  75%{
+    right: 0;
+  }
+  100%{
+    top: -15vh;
+  }
+}
+
+.result {
+  margin-bottom: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8vh;
+  color: #0067e4;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+.btn {
+  width:15rem;
+  margin: auto;
+  margin-top: 2%;
+  position: relative;
+  z-index: 1;
+}
+
+button{
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(#49c2ff, #06318d);
+  color: #fff;
+  font-family: 'Indie Flower', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover{
+  background: linear-gradient(#06318d , #49c2ff);
+  letter-spacing: 2.5px;
+}
+
+.social-media-credential {
+  position: relative;
+  z-index: 1;
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+.social-media-credential a{
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  color: #4ECCA3;
+  font-size: 1.5rem;
+}
+
+.social-media-credential a:hover{
+  font-size: 2rem;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 5%;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+footer>p{
+  color: #eaf6f6;
+  font-size: 2rem;
+  padding: 20px 0 0 0 ;
+  letter-spacing: 1px;
+}
+
+.roll{
+  animation: roll 1.5sec;
+}
+
+@keyframes roll {
+  0%{
+    transform: rotate3d(360deg);
+  }
+  25%{
+    transform: rotate3d(720deg);
+  }
+  50%{
+    transform: rotate3d(1080deg);
+  }
+  75%{
+    transform: rotate3d(1440deg);
+  }
+  100%{
+    transform: rotate3d(1800deg);
+  }
+}
